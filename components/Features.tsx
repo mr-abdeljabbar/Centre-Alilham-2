@@ -1,7 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import { ShieldCheck, Heart, Clock, Award } from 'lucide-react';
 
-const Features: React.FC = () => {
+interface FeaturesProps {
+  onOpenModal: () => void;
+}
+
+const Features: React.FC<FeaturesProps> = ({ onOpenModal }) => {
   const features = [
     {
       icon: Award,
@@ -26,7 +30,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-medical-900 text-white relative overflow-hidden">
+    <section className="py-16 bg-medical-900 text-white relative overflow-hidden min-h-screen flex items-center">
       {/* Decorative Circles */}
       <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-medical-800 opacity-20"></div>
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-soft-600 opacity-10"></div>
@@ -42,12 +46,12 @@ const Features: React.FC = () => {
             </h3>
           </div>
           <div className="lg:w-auto mt-6 lg:mt-0">
-            <a 
-              href="#contact" 
+            <button
+              onClick={onOpenModal}
               className="inline-block bg-white text-medical-900 px-8 py-3 rounded-full font-bold hover:bg-soft-50 transition-colors shadow-lg"
             >
               Réserver votre consultation
-            </a>
+            </button>
           </div>
         </div>
 
