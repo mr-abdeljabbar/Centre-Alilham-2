@@ -7,6 +7,7 @@ interface FooterProps {
 }
 
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer: React.FC<FooterProps> = ({ onOpenModal }) => {
   return (

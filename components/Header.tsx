@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { CONTACT_INFO } from '../constants';
 
 interface HeaderProps {
@@ -59,8 +60,6 @@ const Header: React.FC<HeaderProps> = ({ onOpenModal }) => {
                 src="/images/logo.png"
                 alt="Logo Centre Alilham"
                 className="w-12 h-12 object-contain"
-                width="48"
-                height="48"
               />
               <div className="flex flex-col">
                 <span className="text-xl lg:text-2xl font-serif font-bold text-medical-900 group-hover:text-soft-600 transition-colors">

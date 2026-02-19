@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { MessageCircle, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
 

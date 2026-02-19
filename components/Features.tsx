@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { ShieldCheck, Heart, Clock, Award } from 'lucide-react';
 
 interface FeaturesProps {

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Award, GraduationCap, MapPin } from 'lucide-react';
 import { DOCTOR_NAME, DIPLOMAS } from '../constants';
 
@@ -19,7 +19,6 @@ const About: React.FC<AboutProps> = ({ onOpenModal }) => {
               src="/images/profil.jpg"
               alt={`Portrait ${DOCTOR_NAME}`}
               className="relative z-10 w-full h-[500px] object-cover rounded-3xl shadow-xl"
-              loading="lazy"
             />
 
             <div className="absolute bottom-8 right-8 z-20 bg-white p-6 rounded-2xl shadow-lg max-w-xs border-l-4 border-soft-500">

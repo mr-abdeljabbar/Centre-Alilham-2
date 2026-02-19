@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Calendar, Phone, Star } from 'lucide-react';
 import { DOCTOR_NAME, CONTACT_INFO } from '../constants';
 

@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { MapPin, Phone, Clock } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
 import ContactForm from './ContactForm';

@@ -38,6 +38,37 @@
     href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
     rel="stylesheet">
 
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            medical: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#64748b', // Cool Slate
+              600: '#475569',
+              800: '#334155',
+              900: '#1e293b', // Deep Cold Slate
+            },
+            soft: {
+              50: '#fcfafa', // Soft Off-white
+              100: '#f3e8ff', // Pale Lavender
+              300: '#d8b4fe',
+              500: '#a78bfa', // Cool Lavender
+              600: '#8b5cf6', // Violet
+            }
+          },
+          fontFamily: {
+            sans: ['Lato', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
 
   <!-- Schema Markup for Local SEO -->
   <script type="application/ld+json">

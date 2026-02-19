@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Scale, ShieldCheck, MapPin, Phone, Mail } from 'lucide-react';
 import { CONTACT_INFO, DOCTOR_NAME } from '../constants';
 
