@@ -1,5 +1,4 @@
-import * as React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
@@ -12,6 +11,8 @@ import Footer from './components/Footer';
 import FloatingElements from './components/FloatingElements';
 import Modal from './components/Modal';
 import ContactForm from './components/ContactForm';
+import AdminLogin from './components/admin/AdminLogin';
+import AdminPage from './components/admin/AdminPage';
 
 // ScrollToTop component to reset scroll on route change
 const ScrollToTop = () => {
@@ -41,6 +42,8 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/legal-notice" element={<LegalNotice />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/admin" element={<AdminPage />} />
+            <Route path="/admin/login" element={<AdminLogin />} />
           </Routes>
         </main>
         <Footer onOpenModal={openModal} />

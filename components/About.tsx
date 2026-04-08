@@ -1,12 +1,17 @@
 import React from 'react';
 import { Award, GraduationCap, MapPin } from 'lucide-react';
-import { DOCTOR_NAME, DIPLOMAS } from '../constants';
+import { useTranslation } from 'react-i18next';
+import { DOCTOR_NAME } from '../constants';
 
 interface AboutProps {
   onOpenModal: () => void;
 }
 
 const About: React.FC<AboutProps> = ({ onOpenModal }) => {
+  const { t } = useTranslation();
+  const rawDiplomas = t('diplomas', { returnObjects: true });
+  const diplomas = Array.isArray(rawDiplomas) ? rawDiplomas as string[] : [];
+
   return (
     <section id="about" className="py-16 bg-cold-pink/30 min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -22,31 +27,31 @@ const About: React.FC<AboutProps> = ({ onOpenModal }) => {
             />
 
             <div className="absolute bottom-8 right-8 z-20 bg-white p-6 rounded-2xl shadow-lg max-w-xs border-l-4 border-soft-500">
-              <p className="text-gray-900 font-bold text-lg mb-1">Ex-Médecin au CHU</p>
-              <p className="text-soft-600 font-medium">Med 6 Marrakech</p>
+              <p className="text-gray-900 font-bold text-lg mb-1">{t('about.chu_badge_title')}</p>
+              <p className="text-soft-600 font-medium">{t('about.chu_badge_sub')}</p>
             </div>
           </div>
 
           {/* Content Side */}
           <div>
             <h2 className="text-soft-600 font-semibold tracking-wide uppercase text-sm mb-2">
-              À Propos du Docteur
+              {t('about.label')}
             </h2>
             <h3 className="text-3xl lg:text-4xl font-serif font-bold text-gray-900 mb-6">
-              Une expertise internationale au service de votre santé
+              {t('about.title')}
             </h3>
 
             <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-              Le <span className="font-bold text-gray-800">{DOCTOR_NAME}</span> met à votre disposition son savoir-faire acquis dans les plus grands hôpitaux de France et du Maroc. Spécialiste en gynécologie obstétrique, elle vous accompagne à chaque étape de votre vie de femme avec une approche humaine, discrète et professionnelle.
+              {t('about.bio', { name: DOCTOR_NAME })}
             </p>
 
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-8">
               <h4 className="flex items-center gap-2 font-bold text-gray-800 mb-4">
                 <GraduationCap className="text-soft-600" />
-                Diplômes et Formation en France
+                {t('about.diplomas_title')}
               </h4>
               <ul className="space-y-3">
-                {DIPLOMAS.map((diploma, index) => (
+                {diplomas.map((diploma, index) => (
                   <li key={index} className="flex items-start gap-3 text-gray-700">
                     <Award className="w-5 h-5 text-soft-500 flex-shrink-0 mt-0.5" />
                     <span>{diploma}</span>
@@ -60,11 +65,11 @@ const About: React.FC<AboutProps> = ({ onOpenModal }) => {
                 onClick={onOpenModal}
                 className="px-8 py-3 bg-soft-600 text-white rounded-full font-bold hover:bg-soft-700 transition-all shadow-lg transform hover:-translate-y-0.5 active:scale-95"
               >
-                Prendre Rendez-vous
+                {t('about.cta')}
               </button>
               <div className="flex items-center gap-2 text-gray-600">
                 <MapPin className="w-5 h-5 text-soft-600" />
-                <span className="font-medium">El Kelâa des Sraghna</span>
+                <span className="font-medium">{t('about.location')}</span>
               </div>
             </div>
           </div>

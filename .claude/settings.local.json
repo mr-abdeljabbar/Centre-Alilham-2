@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:/Users/abdel/WebApps/Centre-Alilham-2\" show --stat HEAD)",
+      "Bash(npm install:*)",
+      "Bash(mkdir:*)",
+      "Bash(npm run:*)",
+      "Bash(npx tsc:*)"
+    ]
+  }
+}

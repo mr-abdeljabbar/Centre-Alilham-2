@@ -5,6 +5,7 @@ import Services from './Services';
 import Features from './Features';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
+import SEO from './SEO';
 
 interface HomeProps {
     onOpenModal: () => void;
@@ -13,6 +14,7 @@ interface HomeProps {
 const Home: React.FC<HomeProps> = ({ onOpenModal }) => {
     return (
         <>
+            <SEO />
             <Hero onOpenModal={onOpenModal} />
             <About onOpenModal={onOpenModal} />
             <Services onOpenModal={onOpenModal} />

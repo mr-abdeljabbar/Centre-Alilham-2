@@ -1,0 +1,157 @@
+{
+  "common": {
+    "doctor_name":     "Dr Ilham YASSINE",
+    "center_name":     "Centre Alilham",
+    "specialty_short": "Gynécologie Obstétrique",
+    "address":         "Centre Alilham, El Kelâa des Sraghna, 43000, Maroc"
+  },
+  "header": {
+    "nav": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "cta": "Prendre Rendez-vous",
+    "hours": "Lun - Ven : 09h00 - 18h00",
+    "urgence": "Urgence :"
+  },
+  "hero": {
+    "badge1": "Diplômée en France",
+    "badge2": "Ex-Médecin CHU Med 6",
+    "specialty": "Spécialiste en Gynécologie Obstétrique",
+    "description": "Votre santé féminine accompagnée avec expertise, sécurité et bienveillance au cœur d'El Kelâa des Sraghna. Nous offrons des soins personnalisés et une écoute attentive pour chaque étape de votre vie de femme.",
+    "cta_rdv": "Prendre Rendez-vous",
+    "cta_call": "Appeler Maintenant",
+    "urgence_label": "Numéro d'urgence :"
+  },
+  "about": {
+    "label": "À Propos du Docteur",
+    "title": "Une expertise internationale au service de votre santé",
+    "bio": "Le {{name}} met à votre disposition son savoir-faire acquis dans les plus grands hôpitaux de France et du Maroc. Spécialiste en gynécologie obstétrique, elle vous accompagne à chaque étape de votre vie de femme avec une approche humaine, discrète et professionnelle.",
+    "diplomas_title": "Diplômes et Formation en France",
+    "cta": "Prendre Rendez-vous",
+    "chu_badge_title": "Ex-Médecin au CHU",
+    "chu_badge_sub": "Med 6 Marrakech",
+    "location": "El Kelâa des Sraghna"
+  },
+  "services": {
+    "label": "Nos Domaines d'Intervention",
+    "title": "Une prise en charge complète et spécialisée",
+    "description": "Du suivi de grossesse à la chirurgie spécialisée, nous offrons des soins de haute qualité adaptés à vos besoins.",
+    "cta": "Prendre Rendez-vous"
+  },
+  "features": {
+    "label": "Pourquoi nous choisir ?",
+    "title": "Centre Alilham : L'excellence médicale au féminin",
+    "cta": "Réserver votre consultation",
+    "items": [
+      {
+        "title": "Expertise Internationale",
+        "desc": "Formation spécialisée en France et expérience en CHU pour des soins d'excellence."
+      },
+      {
+        "title": "Technologie Avancée",
+        "desc": "Équipements modernes, incluant l'échographie 3D-4D pour des diagnostics précis."
+      },
+      {
+        "title": "Suivi Personnalisé",
+        "desc": "Une écoute attentive et un accompagnement bienveillant à chaque étape."
+      },
+      {
+        "title": "Disponibilité & Urgence",
+        "desc": "Des créneaux rapides et une ligne d'urgence disponible pour votre sécurité."
+      }
+    ]
+  },
+  "contact": {
+    "label": "Rendez-vous",
+    "title": "Prenons",
+    "title_emphasis": "Soin de Vous",
+    "subtitle": "Réservez votre consultation en ligne ou contactez-nous directement. Notre équipe vous rappelle sous 24 h.",
+    "step1": "Choisissez une date",
+    "step2": "Vos informations",
+    "info_address": "Adresse",
+    "info_phone": "Téléphone",
+    "info_hours": "Horaires",
+    "hours_weekdays": "Lun – Ven : 09h00 – 18h00",
+    "hours_saturday": "Sam : 09h00 – 13h00",
+    "urgences": "Urgences :",
+    "whatsapp_title": "Écrire sur WhatsApp",
+    "whatsapp_sub": "Réponse rapide garantie",
+    "form_title": "Demande de rendez-vous",
+    "form_date_selected": "Date sélectionnée : {{date}}",
+    "form_date_hint": "Sélectionnez une date sur le calendrier ou choisissez-en une dans le formulaire",
+    "form_date_chosen": "✓ Date choisie"
+  },
+  "form": {
+    "name_label": "Nom complet *",
+    "name_placeholder": "Votre nom",
+    "phone_label": "Téléphone *",
+    "phone_placeholder": "0612 345 678",
+    "email_label": "Email (optionnel)",
+    "email_placeholder": "votre@email.com",
+    "service_label": "Motif de consultation *",
+    "date_label": "Date souhaitée",
+    "message_label": "Message (optionnel)",
+    "message_placeholder": "Décrivez brièvement votre motif de consultation...",
+    "submit": "Envoyer la demande",
+    "submitting": "Envoi en cours...",
+    "whatsapp_btn": "Prendre RDV via WhatsApp",
+    "or": "ou",
+    "privacy": "En soumettant ce formulaire, vous acceptez d'être rappelée par notre cabinet pour confirmer l'horaire de votre rendez-vous.",
+    "success_title": "Merci, votre demande est envoyée !",
+    "success_text": "Notre équipe vous contactera dans les plus brefs délais pour confirmer votre rendez-vous.",
+    "success_again": "Envoyer une autre demande",
+    "error_text": "Une erreur est survenue. Veuillez réessayer ou nous contacter directement via WhatsApp.",
+    "err_name": "Nom requis (min. 2 caractères)",
+    "err_phone": "Numéro invalide (ex : 0612345678)",
+    "err_email": "Email invalide",
+    "err_service": "Veuillez sélectionner un service",
+    "err_message": "Max. 500 caractères",
+    "whatsapp_msg": "Bonjour Dr Yassine, je souhaite prendre un rendez-vous.\nNom : {{name}}\nSujet : {{service}}",
+    "services": [
+      "Suivi de grossesse",
+      "Echographie 3D/4D",
+      "Consultation générale",
+      "Stérilité / Fertilité",
+      "Contrôle périodique",
+      "Chirurgie cœlioscopique",
+      "Hystéroscopie",
+      "Colposcopie",
+      "Autre"
+    ]
+  },
+  "calendar": {
+    "choose_date": "Choisissez une date disponible",
+    "confirmed": "Confirmé",
+    "pending": "En attente",
+    "free": "Libre",
+    "today": "Aujourd'hui",
+    "month": "Mois"
+  },
+  "testimonials": {
+    "title": "Elles nous font confiance",
+    "patient_label": "Patiente",
+    "subtitle": "Elles parlent mieux que nous"
+  },
+  "footer": {
+    "tagline": "Cabinet de Gynécologie Obstétrique à El Kelâa des Sraghna. Expertise, sécurité et bienveillance pour la santé des femmes.",
+    "nav_title": "Navigation",
+    "nav_home": "Accueil",
+    "nav_doctor": "Dr Ilham Yassine",
+    "nav_services": "Nos Services",
+    "nav_rdv": "Prendre Rendez-vous",
+    "links_title": "Liens Utiles",
+    "contact_title": "Contact",
+    "urgence_box": "En cas d'urgence",
+    "copyright": "© {{year}} Centre Alilham - Dr Ilham Yassine. Tous droits réservés.",
+    "dev_by": "Développé par",
+    "legal": "Mentions Légales",
+    "privacy": "Politique de Confidentialité"
+  },
+  "floating": {
+    "call": "Appeler",
+    "rdv": "Rendez-vous"
+  }
+}

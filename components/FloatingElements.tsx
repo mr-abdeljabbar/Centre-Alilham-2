@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Phone, Calendar } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 interface FloatingElementsProps {
   onOpenModal: () => void;
@@ -7,10 +8,11 @@ interface FloatingElementsProps {
 
 const FloatingElements: React.FC<FloatingElementsProps> = ({ onOpenModal }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const { t, i18n } = useTranslation();
+  const isRtl = i18n.language === 'ar-MA';
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show sticky CTA after scrolling past hero (approx 500px)
       setIsVisible(window.scrollY > 500);
     };
     window.addEventListener('scroll', handleScroll);
@@ -19,12 +21,13 @@ const FloatingElements: React.FC<FloatingElementsProps> = ({ onOpenModal }) => {
 
   return (
     <>
-      {/* Floating WhatsApp Button */}
+      {/* Floating WhatsApp Button — RTL-aware positioning */}
       <a
         href="https://wa.me/212649130593?text=Bonjour,%20je%20souhaite%20prendre%20rendez-vous"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-24 right-4 z-50 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#20bd5a] transition-all transform hover:scale-110 flex items-center justify-center"
+        style={isRtl ? { left: '1rem', right: 'auto' } : { right: '1rem', left: 'auto' }}
+        className="fixed bottom-24 z-50 bg-[#25D366] text-white p-3 rounded-full shadow-lg hover:bg-[#20bd5a] transition-all transform hover:scale-110 flex items-center justify-center"
         aria-label="Contact sur WhatsApp"
       >
         <svg viewBox="0 0 24 24" className="w-8 h-8 fill-current">
@@ -40,13 +43,13 @@ const FloatingElements: React.FC<FloatingElementsProps> = ({ onOpenModal }) => {
           href="tel:+212524412467"
           className="flex-1 bg-white border border-medical-600 text-medical-600 py-2.5 rounded-lg font-bold flex items-center justify-center gap-2 text-sm"
         >
-          <Phone className="w-4 h-4" /> Appeler
+          <Phone className="w-4 h-4" /> {t('floating.call')}
         </a>
         <button
           onClick={onOpenModal}
           className="flex-1 bg-medical-600 text-white py-2.5 rounded-lg font-bold flex items-center justify-center gap-2 text-sm shadow-md"
         >
-          <Calendar className="w-4 h-4" /> Rendez-vous
+          <Calendar className="w-4 h-4" /> {t('floating.rdv')}
         </button>
       </div>
     </>

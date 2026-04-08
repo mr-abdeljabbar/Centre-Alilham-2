@@ -35,7 +35,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Cairo:wght@400;600;700;800&display=swap"
     rel="stylesheet">
 
   <!-- Tailwind CSS -->
@@ -64,11 +64,19 @@
           fontFamily: {
             sans: ['Lato', 'sans-serif'],
             serif: ['Playfair Display', 'serif'],
+            cairo: ['Cairo', 'sans-serif'],
           }
         }
       }
     }
   </script>
+
+  <style>
+    html.font-cairo, html.font-cairo body, html.font-cairo * { font-family: 'Cairo', sans-serif !important; }
+    html[dir="rtl"] .space-x-6 > * + * { margin-left: 0; margin-right: 1.5rem; }
+    html[dir="rtl"] .space-x-4 > * + * { margin-left: 0; margin-right: 1rem; }
+    html[dir="rtl"] .space-x-8 > * + * { margin-left: 0; margin-right: 2rem; }
+  </style>
 
   <!-- Schema Markup for Local SEO -->
   <script type="application/ld+json">

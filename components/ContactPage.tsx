@@ -1,14 +1,15 @@
-import * as React from 'react';
-import { useEffect } from 'react';
+import React from 'react';
 import Contact from './Contact';
+import SEO from './SEO';
 
 const ContactPage: React.FC = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     return (
         <div className="pt-20 lg:pt-32">
+            <SEO
+                title="Prendre Rendez-vous"
+                description="Contactez le Centre Alilham pour prendre rendez-vous avec Dr Ilham YASSINE à El Kelâa des Sraghna."
+                path="/contact"
+            />
             <Contact />
         </div>
     );
